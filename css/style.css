@@ -1,0 +1,63 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+
+@viewport{
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+
+@-ms-viewport{
+	width: extend-to-zoom;
+	zoom: 1.0;
+}
+
+
+.heading{
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+}
+
+.heading h1{
+	display: flex;
+	justify-content: center;
+}
+
+.heading h5{
+	display: flex;
+	justify-content: center;
+}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 200px;
+}
+
+.btn-1{
+	position: relative;
+	right: 20px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+}
+
+.btn-1:hover{
+	cursor: pointer;
+}
+
+.btn-2{
+	position: relative;
+	left: 20px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+}
+
+.btn-2:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<title>viBrate</title>
+</head>
+<body>
+	<div class="heading">
+	<h1>Vibrate4U</h1>
+	<h5>This website is in beta mode. It vibrates your phone and only works for android as of currently due to the js vibration api</h5>
+</div>
+
+<div class="buttons">
+	<button class="btn-1" onclick="vibrate(2000)">single vibration</button>
+	<button class="btn-2" onclick="vibrateMultiple()">multiple vibrations</button>
+</div>
+
+<script>
+	function vibrate (ms){
+		navigator.vibrate(ms);
+	}
+
+	function vibrateMultiple (){
+		navigator.vibrate([300, 100, 300, 100, 300]);
+	}
+</script>
+
+</body>
+</html>
